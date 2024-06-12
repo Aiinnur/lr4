@@ -20,7 +20,7 @@ struct LostGame : public IGameEvent {
 };
 
 struct DeleteStaticEntity : public IGameEvent {
-    DeleteStaticEntity(IStaticEntity& ptr_entity) : m_ptr_entity(ptr_entity) {}
+    explicit DeleteStaticEntity(IStaticEntity& ptr_entity) : m_ptr_entity(ptr_entity) {}
     void handle(GameContext& context) override;
 
 private:

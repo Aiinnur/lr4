@@ -2,7 +2,7 @@
 
 #include "../GameState/GameState.h"
 #include "../SideWallAndPass/SideWallAndPass.h"
-#include "memory"
+#include <memory>
 
 struct IGameBuilder {
     virtual void create_rooms() = 0;

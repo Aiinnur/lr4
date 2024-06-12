@@ -1,6 +1,7 @@
 #include "Entity.h"
 #include "../RoomAndMaze/RoomAndMaze.h"
 #include "../config/config.h"
+#include <memory>
 
 /// дндекюрэ 
 /*void PacMan::draw_into(sf::RenderWindow& window) {

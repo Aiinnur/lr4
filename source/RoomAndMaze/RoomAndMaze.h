@@ -4,6 +4,7 @@
 #include <exception>
 #include "../IDrawable/IDrawable.h"
 #include "../SideWallAndPass/SideWallAndPass.h"
+#include <memory>
 //#include "side.h"
 
 class IRoomSide;
@@ -25,6 +26,7 @@ private:
     sf::RectangleShape m_rectangle;
     std::array<std::shared_ptr<IRoomSide>, 4> m_sides;
 };
+
 class Maze : public IDrawable {
 public:
     Maze() = default;
